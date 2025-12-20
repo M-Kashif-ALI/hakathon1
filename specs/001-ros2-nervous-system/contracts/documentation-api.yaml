@@ -1,0 +1,71 @@
+# API Contract: Documentation Site for ROS 2 Robotic Nervous System
+
+**Feature**: 001-ros2-nervous-system
+**Date**: 2025-12-20
+**Status**: Complete
+
+## Documentation Site Endpoints
+
+### Module 1: ROS 2 Architecture
+- **Endpoint**: `/docs/ros2-architecture`
+- **Method**: GET
+- **Purpose**: Serve the ROS 2 Architecture chapter
+- **Content**:
+  - Role of ROS 2 in Physical AI
+  - Nodes, topics, services, and message flow
+  - Communication patterns in humanoid robots
+- **Response**: HTML page with embedded documentation
+
+### Module 1: Python Robot Control (rclpy)
+- **Endpoint**: `/docs/python-robot-control`
+- **Method**: GET
+- **Purpose**: Serve the Python Robot Control chapter
+- **Content**:
+  - Creating ROS 2 nodes with rclpy
+  - Publishing and subscribing patterns
+  - AI agent integration examples
+- **Response**: HTML page with embedded documentation and code examples
+
+### Module 1: Humanoid Structure with URDF
+- **Endpoint**: `/docs/urdf-humanoid-structure`
+- **Method**: GET
+- **Purpose**: Serve the URDF chapter
+- **Content**:
+  - URDF links and joints definitions
+  - Kinematics explanations
+  - Simulation and control usage
+- **Response**: HTML page with embedded documentation and XML examples
+
+### Search Endpoint
+- **Endpoint**: `/api/search`
+- **Method**: POST
+- **Purpose**: Search across documentation content
+- **Request Body**:
+  - query (string, required)
+- **Response**:
+  - results (array of matching content)
+  - relevance score for each result
+
+### Code Examples Endpoint
+- **Endpoint**: `/api/examples`
+- **Method**: GET
+- **Purpose**: Retrieve code examples for download/practice
+- **Response**:
+  - examples (array of code example objects)
+  - Each with: filename, content, language, description
+
+## Navigation Structure Contract
+- **Main Navigation**:
+  - Home
+  - Module 1: ROS 2 Robotic Nervous System
+    - Chapter 1: ROS 2 Architecture
+    - Chapter 2: Python Robot Control (rclpy)
+    - Chapter 3: Humanoid Structure with URDF
+  - Resources
+  - Search
+
+## Content Validation Contract
+- All code examples must be verified as correct and runnable
+- Content must be appropriate for target audience (software engineers and AI students)
+- Documentation must follow accessible design principles
+- All external links must be validated
