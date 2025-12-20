@@ -53,6 +53,41 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Digital Twin: Gazebo & Unity',
+      items: [
+        {
+          type: 'category',
+          label: 'Chapter 1: Physics Simulation with Gazebo',
+          items: [
+            'digital-twin/gazebo-simulation/index',
+            'digital-twin/gazebo-simulation/physics-concepts',
+            'digital-twin/gazebo-simulation/ros2-integration',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chapter 2: Environment & Interaction in Unity',
+          items: [
+            'digital-twin/unity-environment/index',
+            'digital-twin/unity-environment/rendering',
+            'digital-twin/unity-environment/interaction-scenarios',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Chapter 3: Sensor Simulation',
+          items: [
+            'digital-twin/sensor-simulation/index',
+            'digital-twin/sensor-simulation/lidar-simulation',
+            'digital-twin/sensor-simulation/depth-camera-simulation',
+            'digital-twin/sensor-simulation/imu-simulation',
+            'digital-twin/sensor-simulation/ros2-data-flow',
+          ],
+        },
+      ],
+    },
   ],
 };
 

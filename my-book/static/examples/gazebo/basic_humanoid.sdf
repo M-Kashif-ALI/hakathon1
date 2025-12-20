@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="basic_humanoid">
+    <link name="base_link">
+      <pose>0 0 0.5 0 0 0</pose>
+      <inertial>
+        <mass>10.0</mass>
+        <inertia>
+          <ixx>0.1</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.1</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.1</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.3 0.3 0.3</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.8 1.0</ambient>
+          <diffuse>0.3 0.3 0.9 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.3 0.3 0.3</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="head">
+      <pose>0 0 0.3 0 0 0</pose>
+      <inertial>
+        <mass>2.0</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.15</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1.0</ambient>
+          <diffuse>0.9 0.9 0.9 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <sphere>
+            <radius>0.15</radius>
+          </sphere>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="neck_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>head</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.5</lower>
+          <upper>0.5</upper>
+          <effort>100</effort>
+          <velocity>1</velocity>
+        </limit>
+      </axis>
+      <pose>0 0 0.3 0 0 0</pose>
+    </joint>
+
+    <link name="left_arm">
+      <pose>0.2 0 0 0 0 0</pose>
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.4</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1.0</ambient>
+          <diffuse>0.6 0.6 0.6 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.4</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="left_shoulder" type="revolute">
+      <parent>base_link</parent>
+      <child>left_arm</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.57</lower>
+          <upper>1.57</upper>
+          <effort>50</effort>
+          <velocity>2</velocity>
+        </limit>
+      </axis>
+      <pose>0.2 0 0 0 0 0</pose>
+    </joint>
+
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <parameters>$(find basic_humanoid_description)/config/basic_humanoid_control.yaml</parameters>
+    </plugin>
+  </model>
+</sdf>

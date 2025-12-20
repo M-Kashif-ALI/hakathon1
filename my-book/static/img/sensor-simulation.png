@@ -1,0 +1,11 @@
+# Sensor Simulation Diagram
+
+This is a placeholder for sensor simulation diagrams. In a real implementation, this would be an actual image file showing sensor simulation concepts.
+
+For the purposes of this documentation, we're creating a text file as a placeholder. In a real implementation, this would be replaced with actual diagrams showing:
+
+1. LiDAR point cloud generation
+2. Depth camera RGB-D data
+3. IMU orientation and acceleration
+4. Sensor placement on humanoid robot
+5. ROS 2 sensor data flow
