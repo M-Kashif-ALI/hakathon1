@@ -13,15 +13,17 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className="hero__title fade-in">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <p className="hero__subtitle fade-in" style={{animationDelay: '0.2s'}}>
+          {siteConfig.tagline}
+        </p>
+        <div className={`${styles.buttons} fade-in`} style={{animationDelay: '0.4s'}}>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            className="button button--secondary button--lg button-hover"
+            to="/docs/ros2-nervous-system">
+            Get Started with Physical AI & Humanoid Robotics
           </Link>
         </div>
       </div>

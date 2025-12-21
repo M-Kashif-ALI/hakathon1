@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'ROS 2 Robotic Nervous System',
+  title: 'Physical AI & Humanoid Robotics Course',
   tagline: 'Educational module covering ROS 2 as middleware for humanoid robots',
   favicon: 'img/favicon.ico',
 
@@ -18,22 +18,15 @@ const config: Config = {
   url: 'https://your-username.github.io', // GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/ros2-robotic-nervous-system/',
+  baseUrl: '/physical-ai-humanoid-robotics/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'ros2-robotic-nervous-system', // Usually your repo name.
+  projectName: 'physical-ai-humanoid-robotics', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
 
   presets: [
     [
@@ -75,18 +68,18 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     metadata: [
-      {name: 'keywords', content: 'ROS 2, robotics, humanoid robots, middleware, rclpy, URDF, robot operating system, AI, physical AI'},
-      {name: 'description', content: 'Educational module covering ROS 2 as middleware for humanoid robots, including architecture, Python control, and URDF structure definition.'},
-      {name: 'author', content: 'ROS 2 Robotic Nervous System Documentation Team'},
-      {name: 'og:title', content: 'ROS 2 Robotic Nervous System - Educational Module'},
-      {name: 'og:description', content: 'Comprehensive educational module covering ROS 2 as middleware for humanoid robots'},
+      {name: 'keywords', content: 'Physical AI, humanoid robotics, ROS 2, robotics, humanoid robots, middleware, rclpy, URDF, robot operating system, AI'},
+      {name: 'description', content: 'Educational course covering Physical AI & Humanoid Robotics, including ROS 2 architecture, Python robot control, and URDF humanoid structure definition.'},
+      {name: 'author', content: 'Physical AI & Humanoid Robotics Course Documentation Team'},
+      {name: 'og:title', content: 'Physical AI & Humanoid Robotics Course - Educational Module'},
+      {name: 'og:description', content: 'Comprehensive educational course covering Physical AI & Humanoid Robotics'},
       {name: 'og:type', content: 'website'},
-      {name: 'og:url', content: 'https://your-username.github.io/ros2-robotic-nervous-system/'},
+      {name: 'og:url', content: 'https://your-username.github.io/physical-ai-humanoid-robotics/'},
     ],
     navbar: {
-      title: 'ROS 2 Robotic Nervous System',
+      title: 'Physical AI & Humanoid Robotics Course',
       logo: {
-        alt: 'ROS 2 Logo',
+        alt: 'Physical AI & Humanoid Robotics Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -97,7 +90,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/your-username/ros2-robotic-nervous-system',
+          href: 'https://github.com/your-username/physical-ai-humanoid-robotics',
           label: 'GitHub',
           position: 'right',
         },
@@ -110,16 +103,20 @@ const config: Config = {
           title: 'Documentation',
           items: [
             {
+              label: 'ROS 2 Robotic Nervous System',
+              to: '/docs/ros2-nervous-system',
+            },
+            {
               label: 'ROS 2 Architecture',
-              to: '/docs/ros2-architecture',
+              to: '/docs/ros2-nervous-system/ros2-architecture',
             },
             {
               label: 'Python Robot Control',
-              to: '/docs/python-robot-control',
+              to: '/docs/ros2-nervous-system/python-robot-control',
             },
             {
               label: 'URDF Humanoid Structure',
-              to: '/docs/urdf-humanoid-structure',
+              to: '/docs/ros2-nervous-system/urdf-humanoid-structure',
             },
           ],
         },
@@ -145,12 +142,12 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-username/ros2-robotic-nervous-system',
+              href: 'https://github.com/your-username/physical-ai-humanoid-robotics',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} ROS 2 Robotic Nervous System Documentation. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Course. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
