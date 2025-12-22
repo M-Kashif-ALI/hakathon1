@@ -108,15 +108,15 @@ const config: Config = {
             },
             {
               label: 'Digital Twin',
-              to: '/docs/digital-twin',
+              to: '/docs/digital-twin/gazebo-simulation/',
             },
             {
               label: 'Isaac Robot Brain',
-              to: '/docs/003-isaac-robot-brain',
+              to: '/docs/isaac-robot-brain/isaac-sim/',
             },
             {
               label: 'VLA Integration',
-              to: '/docs/004-vla-integration',
+              to: '/docs/vla-integration',
             },
           ],
         },
