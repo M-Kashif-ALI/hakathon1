@@ -90,7 +90,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/M-Kashif-ALI/hakathon1/tree/001-vla-integration',
+          href: 'https://github.com/M-Kashif-ALI/hakathon1/tree/002-footer-docs-update',
           label: 'GitHub',
           position: 'right',
         },
@@ -142,7 +142,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/M-Kashif-ALI/hakathon1/tree/001-vla-integration',
+              href: 'https://github.com/M-Kashif-ALI/hakathon1/tree/002-footer-docs-update',
             },
           ],
         },
