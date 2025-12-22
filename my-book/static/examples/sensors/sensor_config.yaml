@@ -1,0 +1,141 @@
+# Sensor Configuration for Humanoid Robot Simulation
+# This configuration defines the sensor setup for a humanoid robot in simulation
+
+robot_name: "humanoid_robot"
+
+# LiDAR Sensor Configuration
+lidar_sensors:
+  main_lidar:
+    type: "velodyne_vlp16"
+    frame_id: "lidar_link"
+    topic: "/scan"
+    update_rate: 10
+    range_min: 0.1
+    range_max: 30.0
+    samples_horizontal: 1800
+    samples_vertical: 16
+    angle_min_horizontal: -3.14159
+    angle_max_horizontal: 3.14159
+    angle_min_vertical: -0.261799
+    angle_max_vertical: 0.261799
+    noise_stddev: 0.01
+    enabled: true
+
+# Camera Sensor Configuration
+camera_sensors:
+  front_camera:
+    type: "rgb_depth"
+    frame_id: "camera_link"
+    image_topic: "/camera/image_raw"
+    depth_topic: "/camera/depth/image_raw"
+    info_topic: "/camera/camera_info"
+    width: 640
+    height: 480
+    fov_horizontal: 1.047  # 60 degrees
+    fov_vertical: 0.785   # 45 degrees
+    update_rate: 30
+    noise_stddev: 0.007
+    enabled: true
+  head_camera:
+    type: "rgb"
+    frame_id: "head_camera_link"
+    image_topic: "/head_camera/image_raw"
+    info_topic: "/head_camera/camera_info"
+    width: 1280
+    height: 720
+    fov_horizontal: 1.222  # 70 degrees
+    fov_vertical: 0.95   # 54 degrees
+    update_rate: 30
+    enabled: true
+
+# IMU Sensor Configuration
+imu_sensors:
+  torso_imu:
+    type: "imu"
+    frame_id: "torso_imu_link"
+    topic: "/imu/data"
+    update_rate: 100
+    angular_velocity_stddev: 0.0017  # 0.1 deg/s
+    linear_acceleration_stddev: 0.017  # 0.017 m/s^2
+    orientation_stddev: 0.01
+    enabled: true
+  head_imu:
+    type: "imu"
+    frame_id: "head_imu_link"
+    topic: "/head_imu/data"
+    update_rate: 100
+    angular_velocity_stddev: 0.0017
+    linear_acceleration_stddev: 0.017
+    orientation_stddev: 0.01
+    enabled: true
+
+# Other Sensor Types
+other_sensors:
+  sonar_array:
+    type: "sonar"
+    frame_id: "sonar_link"
+    topic: "/sonar/range"
+    update_rate: 10
+    range_min: 0.05
+    range_max: 5.0
+    fov: 0.785  # 45 degrees
+    noise_stddev: 0.01
+    enabled: false
+
+# Sensor Mounting Positions (relative to robot base)
+sensor_positions:
+  lidar_link:
+    x: 0.0
+    y: 0.0
+    z: 1.5
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+
+  camera_link:
+    x: 0.1
+    y: 0.0
+    z: 1.4
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+
+  head_camera_link:
+    x: 0.0
+    y: 0.0
+    z: 1.6
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+
+  torso_imu_link:
+    x: 0.0
+    y: 0.0
+    z: 0.8
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+
+  head_imu_link:
+    x: 0.0
+    y: 0.0
+    z: 1.6
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+
+  sonar_link:
+    x: 0.2
+    y: 0.0
+    z: 0.3
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+
+# Simulation Parameters
+simulation:
+  enable_noise: true
+  enable_bias: true
+  enable_drift: false
+  temperature_effects: false
+  update_rate_multiplier: 1.0

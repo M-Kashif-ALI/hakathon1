@@ -1,0 +1,20 @@
+.gazeboDiagram {
+  margin-bottom: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.diagramImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+@media (max-width: 576px) {
+  .diagramImage {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+# Gazebo Simulation Diagram
+
+This is a placeholder for Gazebo simulation diagrams. In a real implementation, this would be an actual image file showing Gazebo simulation concepts.
+
+For the purposes of this documentation, we're creating a text file as a placeholder. In a real implementation, this would be replaced with actual diagrams showing:
+
+1. Gazebo physics simulation environment
+2. Robot model in Gazebo world
+3. ROS 2 integration architecture
+4. Sensor simulation examples
