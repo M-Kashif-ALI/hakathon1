@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io', // GitHub Pages URL
+  url: 'https://M-Kashif-ALI.github.io', // GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/physical-ai-humanoid-robotics/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
+  organizationName: 'M-Kashif-ALI', // Usually your GitHub org/user name.
   projectName: 'physical-ai-humanoid-robotics', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -74,7 +74,7 @@ const config: Config = {
       {name: 'og:title', content: 'Physical AI & Humanoid Robotics Course - Educational Module'},
       {name: 'og:description', content: 'Comprehensive educational course covering Physical AI & Humanoid Robotics'},
       {name: 'og:type', content: 'website'},
-      {name: 'og:url', content: 'https://your-username.github.io/physical-ai-humanoid-robotics/'},
+      {name: 'og:url', content: 'https://M-Kashif-ALI.github.io/physical-ai-humanoid-robotics/'},
     ],
     navbar: {
       title: 'Physical AI & Humanoid Robotics Course',
@@ -90,7 +90,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/your-username/physical-ai-humanoid-robotics',
+          href: 'https://github.com/M-Kashif-ALI/hakathon1/tree/001-vla-integration',
           label: 'GitHub',
           position: 'right',
         },
@@ -107,16 +107,16 @@ const config: Config = {
               to: '/docs/ros2-nervous-system',
             },
             {
-              label: 'ROS 2 Architecture',
-              to: '/docs/ros2-nervous-system/ros2-architecture',
+              label: 'Digital Twin',
+              to: '/docs/digital-twin',
             },
             {
-              label: 'Python Robot Control',
-              to: '/docs/ros2-nervous-system/python-robot-control',
+              label: 'Isaac Robot Brain',
+              to: '/docs/003-isaac-robot-brain',
             },
             {
-              label: 'URDF Humanoid Structure',
-              to: '/docs/ros2-nervous-system/urdf-humanoid-structure',
+              label: 'VLA Integration',
+              to: '/docs/004-vla-integration',
             },
           ],
         },
@@ -142,7 +142,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-username/physical-ai-humanoid-robotics',
+              href: 'https://github.com/M-Kashif-ALI/hakathon1/tree/001-vla-integration',
             },
           ],
         },
