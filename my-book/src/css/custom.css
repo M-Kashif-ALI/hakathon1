@@ -13,6 +13,34 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+
+  /* Enhanced color system for better accessibility and visual hierarchy */
+  --ifm-color-secondary: #6c757d;
+  --ifm-color-secondary-dark: #5a6268;
+  --ifm-color-secondary-darker: #545b62;
+  --ifm-color-secondary-darkest: #495057;
+  --ifm-color-secondary-light: #868e96;
+  --ifm-color-secondary-lighter: #9aa4af;
+  --ifm-color-secondary-lightest: #bcc1c7;
+
+  --ifm-color-success: #28a745;
+  --ifm-color-info: #17a2b8;
+  --ifm-color-warning: #ffc107;
+  --ifm-color-danger: #dc3545;
+
+  /* Improved background and text colors for better contrast */
+  --ifm-color-emphasis-0: #000000;
+  --ifm-color-emphasis-100: #222222;
+  --ifm-color-emphasis-200: #444444;
+  --ifm-color-emphasis-300: #666666;
+  --ifm-color-emphasis-400: #888888;
+  --ifm-color-emphasis-500: #999999;
+  --ifm-color-emphasis-600: #bbbbbb;
+  --ifm-color-emphasis-700: #dddddd;
+  --ifm-color-emphasis-800: #f0f0f0;
+  --ifm-color-emphasis-900: #f8f8f8;
+  --ifm-color-emphasis-1000: #ffffff;
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -26,7 +54,938 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+
+  /* Enhanced dark mode color system with better contrast */
+  --ifm-color-secondary: #adb5bd;
+  --ifm-color-secondary-dark: #bfc8d1;
+  --ifm-color-secondary-darker: #c9d1d9;
+  --ifm-color-secondary-darkest: #e2e8f0;
+  --ifm-color-secondary-light: #868e96;
+  --ifm-color-secondary-lighter: #6e7781;
+  --ifm-color-secondary-lightest: #495057;
+
+  --ifm-color-success: #5cb85c;
+  --ifm-color-info: #49a8b9;
+  --ifm-color-warning: #f0ad4e;
+  --ifm-color-danger: #d9534f;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Improved content text for better contrast in dark mode */
+  --ifm-color-content: #ffffff; /* Pure white text for maximum contrast */
+  --ifm-color-content-secondary: #e9ecef; /* Light secondary text */
+  --ifm-color-background: #1a1a1a; /* Darker background */
+  --ifm-color-gray-100: #212529;
+  --ifm-color-gray-200: #343a40;
+  --ifm-color-gray-300: #495057;
+  --ifm-color-gray-400: #6c757d;
+  --ifm-color-gray-500: #868e96;
+  --ifm-color-gray-600: #9aa4af;
+  --ifm-color-gray-700: #adb5bd;
+  --ifm-color-gray-800: #c9d1d9;
+  --ifm-color-gray-900: #f8f9fa;
+}
+
+/* Typography scale for improved readability */
+:root {
+  /* Base font size and line height for better readability */
+  --ifm-font-size-base: 17px;
+  --ifm-line-height-base: 1.7;
+  --ifm-leading-desktop: 1.7;
+  --ifm-leading: 1.7;
+
+  /* Heading sizes for visual hierarchy */
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.75rem;
+  --ifm-h4-font-size: 1.5rem;
+  --ifm-h5-font-size: 1.25rem;
+  --ifm-h6-font-size: 1rem;
+
+  /* Font weights for better visual hierarchy */
+  --ifm-font-weight-semibold: 600;
+  --ifm-font-weight-bold: 700;
+
+  /* Improved text spacing */
+  --ifm-h1-line-height: 1.2;
+  --ifm-h2-line-height: 1.25;
+  --ifm-h3-line-height: 1.3;
+  --ifm-h4-line-height: 1.35;
+  --ifm-h5-line-height: 1.4;
+  --ifm-h6-line-height: 1.45;
+
+  /* Consistent spacing system based on 8px grid */
+  --ifm-spacing-unit: 1rem;
+  --ifm-spacing-half: 0.5rem;
+  --ifm-spacing-double: 2rem;
+  --ifm-spacing-triple: 3rem;
+  --ifm-spacing-quadruple: 4rem;
+
+  /* Component-specific spacing */
+  --ifm-global-spacing: 1rem;
+  --ifm-global-radius: 0.5rem;
+  --ifm-global-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  /* WCAG 2.1 AA compliant contrast ratios */
+  --ifm-color-content: #242526; /* Dark text for good contrast */
+  --ifm-color-content-secondary: #5b5c5d; /* Secondary text */
+  --ifm-color-background: #ffffff; /* Light background */
+  --ifm-color-gray-100: #f8f9fa;
+  --ifm-color-gray-200: #e9ecef;
+  --ifm-color-gray-300: #dee2e6;
+  --ifm-color-gray-400: #ced4da;
+  --ifm-color-gray-500: #adb5bd;
+  --ifm-color-gray-600: #6c757d;
+  --ifm-color-gray-700: #495057;
+  --ifm-color-gray-800: #343a40;
+  --ifm-color-gray-900: #212529;
+
+  /* Additional custom properties for consistent theming */
+  --ifm-container-width: 1200px;
+  --ifm-container-width-xl: 1400px;
+  --ifm-z-index-dropdown: 100;
+  --ifm-z-index-fixed: 101;
+  --ifm-z-index-modal: 1050;
+  --ifm-z-index-tooltip: 1070;
+  --ifm-z-index-overlay: 1100;
+}
+
+/* Reading experience improvements */
+/* Constrain line length for better readability (aim for 60-80 characters per line) */
+.markdown > h1,
+.markdown > h2,
+.markdown > h3,
+.markdown > h4,
+.markdown > h5,
+.markdown > h6,
+.markdown > p,
+.markdown > ul,
+.markdown > ol,
+.markdown > blockquote,
+.markdown > pre,
+.markdown > table {
+  max-width: 65ch; /* Optimal line length for readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Enhanced heading hierarchy for better visual distinction */
+.markdown h1 {
+  font-weight: var(--ifm-font-weight-bold);
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.5rem;
+}
+
+.markdown h2 {
+  font-weight: var(--ifm-font-weight-bold);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 0.3rem;
+}
+
+.markdown h3 {
+  font-weight: var(--ifm-font-weight-semibold);
+  margin-top: 1.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.markdown h4 {
+  font-weight: var(--ifm-font-weight-semibold);
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.markdown h5 {
+  font-weight: var(--ifm-font-weight-semibold);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown h6 {
+  font-weight: var(--ifm-font-weight-semibold);
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Improved paragraph spacing and readability */
+.markdown p {
+  margin-bottom: 1.2rem;
+  line-height: var(--ifm-line-height-base);
+  color: var(--ifm-color-content);
+}
+
+/* Ensure proper text contrast in dark mode for all content */
+[data-theme='dark'] .markdown p {
+  color: var(--ifm-color-content);
+}
+
+[data-theme='dark'] .markdown {
+  color: var(--ifm-color-content);
+}
+
+[data-theme='dark'] .markdown h1,
+[data-theme='dark'] .markdown h2,
+[data-theme='dark'] .markdown h3,
+[data-theme='dark'] .markdown h4,
+[data-theme='dark'] .markdown h5,
+[data-theme='dark'] .markdown h6 {
+  color: #ffffff; /* Pure white for maximum contrast */
+}
+
+[data-theme='dark'] .markdown blockquote {
+  background-color: var(--ifm-color-gray-200);
+  color: var(--ifm-color-content);
+  border-left-color: var(--ifm-color-emphasis-600);
+}
+
+/* Additional contrast improvements for dark mode */
+[data-theme='dark'] .markdown a {
+  color: #4fc3f7; /* Bright blue for better link visibility */
+}
+
+[data-theme='dark'] .markdown a:hover {
+  color: #29b6f6; /* Slightly different blue on hover */
+}
+
+[data-theme='dark'] .markdown code {
+  background-color: #2d2d2d; /* Darker background for code blocks */
+  color: #f8f8f2; /* Light text for code */
+}
+
+[data-theme='dark'] .markdown pre {
+  background-color: #2d2d2d; /* Darker background for code blocks */
+  color: #f8f8f2; /* Light text for code */
+}
+
+/* Optimized code block styling for better readability */
+.prism-code {
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  border-radius: var(--ifm-global-radius);
+  padding: 1.2rem !important;
+  margin-bottom: 1.5rem;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Inline code styling */
+code {
+  font-size: 0.9em;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-danger);
+}
+
+/* Enhanced table styling for better content presentation */
+.markdown table {
+  display: table;
+  table-layout: auto;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.markdown table th {
+  background-color: var(--ifm-color-emphasis-100);
+  font-weight: var(--ifm-font-weight-bold);
+  text-align: left;
+}
+
+.markdown table tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-50);
+}
+
+/* Improved list item styling and spacing */
+.markdown ul,
+.markdown ol {
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+.markdown li {
+  margin-bottom: 0.5rem;
+  line-height: var(--ifm-line-height-base);
+}
+
+.markdown ul li {
+  list-style-type: disc;
+}
+
+.markdown ol li {
+  list-style-type: decimal;
+}
+
+.markdown li p {
+  margin-bottom: 0.5rem;
+}
+
+/* Proper visual hierarchy for documentation sections */
+.markdown section {
+  margin-bottom: 2.5rem;
+}
+
+.markdown .alert {
+  margin-bottom: 1.5rem;
+  border-radius: var(--ifm-global-radius);
+  padding: 1rem 1.2rem;
+}
+
+.markdown blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid var(--ifm-color-emphasis-400);
+  background-color: var(--ifm-color-emphasis-50);
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* Enhanced footer navigation styling and organization */
+.footer {
+  background-color: var(--ifm-color-emphasis-900);
+  color: var(--ifm-color-emphasis-100);
+  padding: 3rem 1rem 1.5rem;
+  text-align: center;
+}
+
+.footer__title {
+  font-weight: var(--ifm-font-weight-bold);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.footer__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__item {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.footer__link {
+  color: var(--ifm-color-emphasis-300);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: block;
+  padding: 0.25rem 0;
+}
+
+.footer__link:hover {
+  color: var(--ifm-color-primary-light);
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Enhanced dark mode contrast for footer */
+[data-theme='dark'] .footer {
+  background-color: #202020; /* Slightly lighter dark background for better contrast */
+  color: #ffffff; /* Pure white text */
+}
+
+[data-theme='dark'] .footer__title {
+  color: #ffffff; /* Pure white for better contrast */
+}
+
+[data-theme='dark'] .footer__link {
+  color: #b0b0b0; /* Light gray for better contrast */
+}
+
+[data-theme='dark'] .footer__link:hover {
+  color: #4fc3f7; /* Bright blue on hover for better visibility */
+}
+
+[data-theme='dark'] .footer__copyright {
+  border-top: 1px solid #404040; /* Darker border */
+  color: #a0a0a0; /* Lighter gray text */
+}
+
+/* Enhanced contrast for all content in dark mode */
+[data-theme='dark'] {
+  --ifm-color-content: #ffffff;
+  --ifm-color-content-secondary: #e9ecef;
+}
+
+[data-theme='dark'] .markdown {
+  color: #ffffff; /* Ensure main markdown content is white */
+}
+
+[data-theme='dark'] .markdown * {
+  color: #ffffff !important; /* Ensure all text elements are white in dark mode */
+}
+
+/* Enhanced contrast for all text elements in dark mode */
+[data-theme='dark'] .markdown p,
+[data-theme='dark'] .markdown li,
+[data-theme='dark'] .markdown td,
+[data-theme='dark'] .markdown th,
+[data-theme='dark'] .markdown blockquote p,
+[data-theme='dark'] .markdown strong,
+[data-theme='dark'] .markdown em,
+[data-theme='dark'] .markdown s,
+[data-theme='dark'] .markdown h1 *,
+[data-theme='dark'] .markdown h2 *,
+[data-theme='dark'] .markdown h3 *,
+[data-theme='dark'] .markdown h4 *,
+[data-theme='dark'] .markdown h5 *,
+[data-theme='dark'] .markdown h6 * {
+  color: #ffffff !important; /* Pure white for maximum contrast */
+}
+
+/* Enhanced contrast for inline code */
+[data-theme='dark'] .markdown code {
+  background-color: #2d2d2d !important;
+  color: #f8f8f2 !important;
+  border: 1px solid #444444 !important;
+}
+
+
+/* Improved search bar styling and results display */
+.navbar__search {
+  padding-left: 1rem;
+}
+
+.search-bar {
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+.search-bar:focus {
+  width: 250px;
+}
+
+.DocSearch-Button {
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 0.375rem 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.DocSearch-Button:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(46, 133, 85, 0.2);
+}
+
+.DocSearch-Button-Placeholder {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.DocSearch-Button-Keys {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.DocSearch-Button-Key {
+  background: var(--ifm-color-emphasis-200);
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+  font-size: 0.75rem;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modern button styles with hover and focus states */
+.button {
+  border-radius: var(--ifm-global-radius);
+  padding: 0.5rem 1rem;
+  font-weight: var(--ifm-font-weight-semibold);
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+.button--secondary {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.button--secondary:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+.button:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Consistent card and container styling for content sections */
+.card {
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-color-emphasis-50);
+  box-shadow: var(--ifm-global-shadow);
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card__header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: calc(var(--ifm-global-radius) - 1px) calc(var(--ifm-global-radius) - 1px) 0 0;
+}
+
+.card__body {
+  padding: 1.5rem;
+}
+
+.card__footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 0 0 calc(var(--ifm-global-radius) - 1px) calc(var(--ifm-global-radius) - 1px);
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+/* Enhanced callout components (note, tip, warning, danger) styling */
+.alert {
+  border-radius: var(--ifm-global-radius);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.alert--primary {
+  background-color: var(--ifm-color-primary-lightest);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-darker);
+}
+
+.alert--secondary {
+  background-color: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-400);
+  color: var(--ifm-color-emphasis-800);
+}
+
+.alert--success {
+  background-color: rgba(40, 167, 69, 0.1);
+  border-color: var(--ifm-color-success);
+  color: var(--ifm-color-success);
+}
+
+.alert--info {
+  background-color: rgba(23, 162, 184, 0.1);
+  border-color: var(--ifm-color-info);
+  color: var(--ifm-color-info);
+}
+
+.alert--warning {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-color: var(--ifm-color-warning);
+  color: var(--ifm-color-warning);
+}
+
+.alert--danger {
+  background-color: rgba(220, 53, 69, 0.1);
+  border-color: var(--ifm-color-danger);
+  color: var(--ifm-color-danger);
+}
+
+/* Subtle animations and transitions for interactive elements */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scale-in {
+  transition: transform 0.2s ease;
+}
+
+.scale-in:hover {
+  transform: scale(1.02);
+}
+
+/* Consistent styling for links and interactive elements */
+a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ifm-color-primary-darker);
+  text-decoration: underline;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--ifm-color-primary);
+  transition: width 0.3s ease;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+.interactive-element {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.interactive-element:hover {
+  transform: translateY(-1px);
+}
+
+/* Enhanced image and media element styling in documentation pages */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow);
+  transition: transform 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+.figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.figure img {
+  margin: 0 auto;
+}
+
+.figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Consistent form element styling */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: var(--ifm-font-weight-normal);
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-900);
+  background-color: var(--ifm-color-emphasis-100);
+  background-clip: padding-box;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  appearance: none;
+  border-radius: var(--ifm-global-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  color: var(--ifm-color-emphasis-900);
+  background-color: var(--ifm-color-emphasis-50);
+  border-color: var(--ifm-color-primary);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(46, 133, 85, 0.25);
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: var(--ifm-font-weight-normal);
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-900);
+  background-color: var(--ifm-color-emphasis-100);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  appearance: none;
+}
+
+.form-check-input {
+  width: 1em;
+  height: 1em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: var(--ifm-color-emphasis-100);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  appearance: none;
+  print-color-adjust: exact;
+}
+
+/* Enhanced sidebar navigation styling with improved visual hierarchy */
+.menu {
+  font-size: 0.9rem;
+}
+
+.menu__list {
+  margin-bottom: 0;
+}
+
+.menu__link {
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--ifm-global-radius);
+  margin: 0.15rem 0;
+  border-left: 2px solid transparent;
+}
+
+.menu__link--active {
+  background-color: var(--ifm-color-emphasis-100);
+  border-left: 2px solid var(--ifm-color-primary);
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+.menu__link:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  text-decoration: none;
+}
+
+.menu__list-item-collapsible:hover {
+  background-color: var(--ifm-color-emphasis-50);
+  border-radius: var(--ifm-global-radius);
+}
+
+.menu__list-item-collapsible .menu__link--sublist {
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+/* Optimize sidebar expand/collapse behavior and animations */
+.menu__list,
+.menu__list-item {
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__list-item .menu__list {
+  overflow: hidden;
+}
+
+.menu__list-item:not(.menu__list-item--collapsed) .menu__list {
+  max-height: 100vh;
+}
+
+.menu__list-item--collapsed .menu__list {
+  max-height: 0;
+}
+
+/* Enhanced navbar styling with improved visual design */
+.navbar {
+  padding: 0.8rem 1rem;
+  box-shadow: var(--ifm-global-shadow);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-background-color);
+}
+
+.navbar__inner {
+  max-width: var(--ifm-container-width-xl);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar__title {
+  font-weight: var(--ifm-font-weight-bold);
+  font-size: 1.2rem;
+  color: var(--ifm-color-content);
+}
+
+.navbar__item {
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+.navbar__link {
+  padding: 0.5rem 0.8rem;
+  border-radius: var(--ifm-global-radius);
+  transition: all 0.2s ease;
+  color: var(--ifm-color-content);
+}
+
+.navbar__link:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.navbar__link--active {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary);
+  font-weight: var(--ifm-font-weight-bold);
+}
+
+/* Enhanced dark mode navbar styling with better contrast */
+[data-theme='dark'] .navbar {
+  background-color: #1a1a1a; /* Dark background */
+  border-bottom: 1px solid #333333; /* Darker border for contrast */
+}
+
+[data-theme='dark'] .navbar__title {
+  color: #ffffff; /* Pure white for maximum contrast */
+}
+
+[data-theme='dark'] .navbar__link {
+  color: #e0e0e0; /* Light gray for better contrast */
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  background-color: #333333; /* Darker background on hover */
+  color: #4fc3f7; /* Bright blue for better visibility */
+}
+
+[data-theme='dark'] .navbar__link--active {
+  background-color: #2a2a2a; /* Darker active background */
+  color: #4fc3f7; /* Bright blue for better visibility */
+}
+
+/* Completely hide the navbar logo as requested */
+.navbar__logo {
+  display: none !important;
+}
+
+.navbar__logo img {
+  display: none !important;
+}
+
+/* Ensure no spacing issues when logo is removed */
+.navbar__title {
+  margin-left: 0;
+}
+
+/* Improved mobile navigation menu experience */
+.navbar-sidebar {
+  background-color: var(--ifm-background-color);
+}
+
+.navbar-sidebar__backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-sidebar__brand {
+  padding: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.navbar-sidebar__items {
+  padding: 1rem;
+}
+
+.navbar-sidebar__item {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 996px) {
+  .navbar {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .navbar__inner {
+    padding: 0 0.5rem;
+  }
+
+  .navbar__items {
+    gap: 0.5rem;
+  }
 }
 
 /* Mobile responsiveness improvements */
@@ -225,6 +1184,21 @@ textarea:focus,
   border-radius: 0.25rem;
 }
 
+/* Enhanced accessibility focus states */
+button:focus,
+.button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus,
+.menu__link:focus,
+.navbar__link:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 /* Better link styling for accessibility */
 a {
   text-decoration: underline;
@@ -232,4 +1206,242 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --ifm-color-primary: #205d3b;
+    --ifm-color-primary-dark: #164429;
+    --ifm-color-primary-darker: #123821;
+    --ifm-color-primary-darkest: #0d2c19;
+  }
+
+  [data-theme='dark'] {
+    --ifm-color-primary: #29d5b0;
+    --ifm-color-primary-dark: #1db18f;
+    --ifm-color-primary-darker: #18997d;
+    --ifm-color-primary-darkest: #138068;
+  }
+
+  /* Enhanced contrast for high contrast mode */
+  .navbar__link,
+  .menu__link,
+  a {
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+/* Skip to main content button - completely removed to prevent any space occupation */
+.skipToContent_fXgn,
+[role="region"][aria-label="Skip to main content"] {
+  display: none !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  z-index: -1 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .fade-in,
+  .slide-in-left,
+  .slide-in-right,
+  .bounce,
+  .pulse,
+  .button-hover,
+  .scale-in,
+  .button:hover {
+    animation: none !important;
+    transition: none !important;
+  }
+
+}
+
+/* Mobile-first responsive design approach */
+/* Optimize typography scaling for different screen sizes */
+@media (max-width: 480px) {
+  .navbar__items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__item {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-sidebar__items {
+    padding: 0.5rem;
+  }
+
+  .navbar-sidebar__item {
+    margin: 0.25rem 0;
+  }
+
+  /* Typography scaling for mobile */
+  .markdown h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .markdown h2 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  .markdown h3 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+
+  .markdown h4 {
+    font-size: 1.2rem;
+  }
+
+  .markdown h5 {
+    font-size: 1.1rem;
+  }
+
+  .markdown h6 {
+    font-size: 1rem;
+  }
+
+  .markdown p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .footer__title {
+    font-size: 1rem;
+  }
+
+  .footer__item {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Responsive footer for mobile */
+  .footer__items {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar__items {
+    gap: 0.75rem;
+  }
+
+  .markdown h1 {
+    font-size: 2rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.7rem;
+  }
+
+  /* Optimized content layout for tablet screen sizes */
+  .markdown > h1,
+  .markdown > h2,
+  .markdown > h3,
+  .markdown > h4,
+  .markdown > h5,
+  .markdown > h6,
+  .markdown > p,
+  .markdown > ul,
+  .markdown > ol,
+  .markdown > blockquote,
+  .markdown > pre,
+  .markdown > table {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .footer__items {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Ensure proper touch target sizing for mobile devices and responsive spacing */
+  button,
+  .button,
+  a,
+  .menu__link,
+  .navbar__link,
+  .footer__link {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 10px 16px;
+  }
+
+  /* Responsive spacing system */
+  .markdown p {
+    margin-bottom: 1rem;
+  }
+
+  .markdown ul,
+  .markdown ol {
+    margin-bottom: 1rem;
+  }
+
+  .markdown li {
+    margin-bottom: 0.3rem;
+  }
+
+  /* Optimize code block display for mobile screens */
+  .prism-code {
+    font-size: 0.8rem !important;
+    padding: 0.8rem !important;
+    overflow-x: auto;
+  }
+
+  .code-block {
+    white-space: pre;
+    overflow-x: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar__items {
+    gap: 1rem;
+  }
+
+  .footer__items {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer__items {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem !important;
+  }
+
+  .navbar__items {
+    gap: 1.2rem;
+  }
 }
